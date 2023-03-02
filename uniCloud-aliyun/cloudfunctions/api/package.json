@@ -1,0 +1,20 @@
+{
+    "cloudfunction-config": {
+        "memorySize": 512,
+        "timeout": 10,
+        "triggers": [],
+        "path": "/http/api"
+    }
+,"cloudfunction-config":{
+	"memorySize" : 256,
+	"path" : "/http/api",
+	"timeout" : 5,
+	"triggers" : 
+	[
+		{
+			"config" : "0 0 2 1 * * *",
+			"name" : "myTrigger",
+			"type" : "timer"
+		}
+	]
+},"name":"api","main":"index.js","version":"1.0.0","description":""}

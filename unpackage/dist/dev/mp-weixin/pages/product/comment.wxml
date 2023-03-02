@@ -1,0 +1,22 @@
+<view class="content" style="border-top:1px solid #eee;">
+  <view class="goods-list">
+    <block wx:for="{{$root.l0}}" wx:for-item="item" wx:for-index="__i0__">
+      <view class="eva-box">
+        <view class="eva_box_top">
+          <!-- <image class="portrait" src="{{item.$orig.userInfo.avatar}}" mode="aspectFill"></image> -->
+          <!-- <image hidden="{{!(!('avatar'in item.$orig.userInfo))}}" class="portrait" src="https://pic4.zhimg.com/v2-194b7fd15f75191874379a76bc380e53_r.jpg" mode="aspectFill"></image> -->
+          <view class="userInfo"><text class="name">{{item.$orig.userInfo.nickname}}</text><text class="time">{{item.f0+''}}</text></view>
+        </view>
+        <view class="right">
+          <view class="con">{{item.$orig.content}}</view>
+          <view class="img_wrap">
+            <view hidden="{{!(item.$orig.images!=='')}}" class="img">
+              <image src="{{item.$orig.images}}"></image>
+            </view>
+          </view>
+          <view class="bot"><text class="attr">购买类型：大包</text></view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

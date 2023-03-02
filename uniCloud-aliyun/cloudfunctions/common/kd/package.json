@@ -1,0 +1,19 @@
+{
+	"name": "kd",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bignumber": "file:../bignumber",
+		"config": "file:../config",
+		"md5-hex": "^3.0.1",
+		"uni-id": "file:../uni-id",
+		"unipay": "file:../unipay"
+	}
+}

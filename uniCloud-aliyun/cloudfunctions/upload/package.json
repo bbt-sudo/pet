@@ -1,0 +1,17 @@
+{
+    "cloudfunction-config": {
+        "memorySize": 256,
+        "path": "/http/upload",
+        "timeout": 5,
+        "triggers": [
+            {}
+        ]
+    },
+    "name": "upload",
+    "main": "index.js",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+        "qiniu": "^7.4.0"
+    }
+}

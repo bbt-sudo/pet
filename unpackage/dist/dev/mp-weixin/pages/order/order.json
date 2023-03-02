@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "订单列表",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "loading": "/components/uni-load-more/uni-load-more"
+  }
+}

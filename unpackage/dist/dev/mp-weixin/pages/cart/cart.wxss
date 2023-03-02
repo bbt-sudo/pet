@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* uni.scss */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*项目相关*/
+/* 默认主题色 */
+/* 自定义主题色 */
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+/* 颜色变量 */
+page {
+  width: 100%;
+  height: calc(100% - 110rpx);
+  background: #f5f5f5;
+}
+page .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+page .container .header {
+  position: relative;
+  width: 100%;
+  height: 360rpx;
+  background: #fc7827;
+  background-size: cover;
+  overflow: hidden;
+  height: 280rpx;
+  background-size: 100% 100%;
+}
+page .container .header .title-contents {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: calc(25px + 88rpx);
+  z-index: 100008;
+}
+page .container .header .title-contents .top-view {
+  width: 100%;
+  height: 25px;
+  background: #fc7827;
+}
+page .container .header .title-contents .titles {
+  display: flex;
+  flex-direction: row;
+  height: 88rpx;
+  background: #fc7827;
+}
+page .container .header .title-contents .titles .titleLeftButton {
+  width: 88rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+}
+page .container .header .title-contents .titles .titleLeftButton image {
+  width: 40rpx;
+  height: 40rpx;
+}
+page .container .header .title-contents .titles .titleText {
+  width: 574rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #fff;
+}
+page .container .header .title-contents .titles .titleRightButton {
+  width: 88rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+}
+page .container .content-wrap {
+  margin-top: 20rpx;
+  margin-left: 24rpx;
+  width: 702rpx;
+}
+page .container .content-wrap .content-item {
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  background: #fff;
+}
+page .container .content-wrap .goods {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+page .container .content-wrap .goods:last-child {
+  margin-top: 0;
+}
+page .container .content-wrap .goods label {
+  margin-left: 20rpx;
+  line-height: 214rpx;
+}
+page .container .content-wrap .goods label .iconfont {
+  font-size: 46rpx;
+  color: #bbb;
+}
+page .container .content-wrap .goods label.act .iconfont {
+  color: #FDD100;
+}
+page .container .content-wrap .goods label.act .iconfont::before {
+  content: '\e617';
+}
+page .container .content-wrap .goods .good {
+  display: flex;
+  justify-content: space-between;
+  width: 624rpx;
+  padding: 20rpx 0 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+page .container .content-wrap .goods .good .img-wrapper {
+  width: 180rpx;
+  height: 180rpx;
+}
+page .container .content-wrap .goods .good .img-wrapper image {
+  width: 100%;
+  height: 100%;
+}
+page .container .content-wrap .goods .good .good-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 440rpx;
+  height: 180rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+page .container .content-wrap .goods .good .good-content .good-title {
+  font-size: 28rpx;
+  color: #111;
+}
+page .container .content-wrap .goods .good .good-content .spec {
+  display: flex;
+  flex-direction: row;
+}
+page .container .content-wrap .goods .good .good-content .spec .spec1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 16rpx;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40rpx;
+  border-radius: 8rpx;
+}
+page .container .content-wrap .goods .good .good-content .spec .spec1 .name {
+  display: inline-block;
+  padding: 0 15rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #666;
+  background: #f6f6f6;
+}
+page .container .content-wrap .goods .good .good-content .spec .spec1 .iconfont {
+  color: #999;
+}
+page .container .content-wrap .goods .good .good-content .good-desc {
+  display: flex;
+  justify-content: space-between;
+}
+page .container .content-wrap .goods .good .good-content .good-desc .good-price {
+  line-height: 38rpx;
+  color: #fb5248;
+  font-size: 30rpx;
+}
+page .container .total-wrap {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #fff;
+  z-index: 9;
+  bottom: 0px;
+}
+page .container .total-wrap .total-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20rpx;
+  width: 490rpx;
+  height: 100%;
+  color: #333;
+  box-sizing: border-box;
+}
+page .container .total-wrap .total-left label {
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+}
+page .container .total-wrap .total-left label .iconfont {
+  font-size: 46rpx;
+  color: #bbb;
+  margin-right: 5px;
+}
+page .container .total-wrap .total-left label.act .iconfont {
+  color: #FDD100;
+}
+page .container .total-wrap .total-left label.act .iconfont::before {
+  content: '\e617';
+}
+page .container .total-wrap .total-left .total-con {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx;
+}
+page .container .total-wrap .total-left .total-con .top-con {
+  display: flex;
+  flex-direction: row;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+page .container .total-wrap .total-left .total-con .top-con .freight {
+  margin-right: 16rpx;
+  font-size: 22rpx;
+  color: #999;
+}
+page .container .total-wrap .total-left .total-con .top-con .symbol {
+  font-size: 24rpx;
+  color: #fc511f;
+}
+page .container .total-wrap .total-left .total-con .top-con .total {
+  color: #fc511f;
+}
+page .container .total-wrap .total-left .total-con .bottom-con {
+  display: flex;
+  flex-direction: row;
+  line-height: 36rpx;
+  font-size: 22rpx;
+}
+page .container .total-wrap .total-left .total-con .bottom-con .discounts {
+  color: #fb5248;
+  margin-right: 16rpx;
+}
+page .container .total-wrap .total-left .total-con .bottom-con .detail {
+  color: #666;
+}
+page .container .total-wrap .total-left .total-con .bottom-con .iconfont {
+  font-size: 14px;
+}
+page .container .total-wrap .total-right {
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 10rpx;
+  margin-right: 20rpx;
+  background: #fc511f;
+  color: #fff;
+  text-align: center;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+}
+page .container .mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10009;
+}
+page .container .mask-content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 510rpx;
+  background: #fff;
+  z-index: 10009;
+}
+page .container .mask-content .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+  height: 110rpx;
+}
+page .container .mask-content .head .title {
+  position: relative;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  line-height: 110rpx;
+  font-size: 32rpx;
+  color: #010101;
+  font-weight: bold;
+}
+page .container .mask-content .head .title::before {
+  position: absolute;
+  left: 0;
+  top: 40rpx;
+  content: ' ';
+  width: 6rpx;
+  height: 30rpx;
+  background: blue;
+}
+page .container .mask-content .head .title text {
+  margin-left: 20rpx;
+  font-weight: normal;
+  font-size: 24rpx;
+  color: #666;
+}
+page .container .mask-content .head image {
+  width: 30rpx;
+  height: 30rpx;
+}
+page .container .mask-content .holder {
+  color: #999;
+}
+page .container .mask-content .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 700rpx;
+  height: 70rpx;
+}
+page .container .mask-content .list text {
+  font-size: 28rpx;
+  color: blue;
+}
+page .container .mask-content .list text text {
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+page .container .mask-content .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 94rpx;
+  color: blue;
+  background: blue;
+  text-align: center;
+  font-size: 34rpx;
+}
+

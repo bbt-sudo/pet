@@ -1,0 +1,1 @@
+<view><view class="quan"><view class="left">{{''+expArr.LogisticCode+''}}</view><view class="right"><text>{{$root.f0}}</text><u-icon vue-id="99ab4314-1" name="arrow-right" color="#000" size="20" bind:__l="__l"></u-icon></view></view></view>

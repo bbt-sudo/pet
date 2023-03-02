@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* uni.scss */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*项目相关*/
+/* 默认主题色 */
+/* 自定义主题色 */
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+/* 颜色变量 */
+uni-button[type='default'] {
+  background: #eee;
+}
+page,
+page {
+  font-size: 28rpx;
+  background: #fff;
+  min-height: 100%;
+}
+.warp {
+  background: #fff;
+  background: #fff;
+}
+.warp .login-title {
+  position: relative;
+  z-index: 9;
+  height: 380rpx;
+}
+.warp .login-title .navback {
+  padding: 5px;
+  position: absolute;
+  left: 20rpx;
+  top: 70rpx;
+  border-radius: 50%;
+}
+.warp .login-title .logo {
+  padding-top: 160rpx;
+  width: 100%;
+  text-align: center;
+}
+.warp .login-title .logo image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+}
+.warp .form-wapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 80rpx 40rpx 20rpx;
+  border-radius: 10rpx;
+  background: #fff;
+}
+.warp .form-wapper .input-wapper {
+  display: flex;
+  flex-direction: row;
+  width: 94%;
+  height: 120rpx;
+  margin-left: 3%;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+.warp .form-wapper .input-wapper:after {
+  border-bottom: 1px solid #eee;
+}
+.warp .form-wapper .input-wapper .lside {
+  width: 54rpx;
+  text-align: left;
+}
+.warp .form-wapper .input-wapper .rside {
+  flex: 1;
+}
+.warp .form-wapper .input-wapper .iconfont {
+  font-size: 40rpx;
+  color: #999;
+}
+.warp .form-wapper .input-wapper input {
+  height: 120rpx;
+}
+.warp .form-wapper .input-wapper .input-placeholder {
+  color: #c2c2c2;
+}
+.warp .form-wapper .input-wapper button {
+  opacity: .8;
+  background: #fdd100;
+  color: #fff;
+}
+.warp .form-wapper .input-wapper .get-code-btn {
+  border: 0;
+  background: #fff;
+  font-size: 24rpx;
+  color: #fff66;
+  text-align: right;
+  padding-left: 0;
+  padding-right: 0;
+}
+.warp .form-wapper .input-wapper .get-code-btn:after {
+  border: 0;
+}
+.warp .form-wapper .paw {
+  line-height: 80rpx;
+  width: 94%;
+  height: 80rpx;
+  margin: 0 3%;
+  text-align: right;
+  color: #666;
+  display: flex;
+  justify-content: flex-end;
+}
+.warp .login-btn {
+  display: block;
+  line-height: 90rpx;
+  text-align: center;
+  width: 600rpx;
+  height: 90rpx;
+  font-size: 32rpx;
+  color: #fff;
+  background: #777;
+  background-blend-mode: normal, normal;
+  border-radius: 45px;
+}
+.warp .login-btn:after {
+  border: 0;
+}
+.warp .reg-paw {
+  margin: 20rpx 0;
+  text-align: center;
+}
+.warp .reg-paw text {
+  font-size: 28rpx;
+  display: inline-block;
+  width: 40%;
+  color: #c5c5c5;
+  position: relative;
+  padding: 20rpx 0;
+}
+.warp .reg-paw .active {
+  color: #888;
+}
+.warp .reg-paw text:first-child:after {
+  border-right: 1px solid #c5c5c5;
+  height: 24rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.warp .quick {
+  text-align: center;
+  padding-bottom: 80rpx;
+}
+.warp .quick .quick-title {
+  margin: 140rpx 0 50rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.warp .quick .quick-title .txt {
+  font-size: 24rpx;
+  color: #999;
+  padding: 0 20rpx;
+}
+.warp .quick .quick-title .line {
+  display: block;
+  width: 120rpx;
+  position: relative;
+}
+.warp .quick .quick-title .line:after {
+  border-bottom: 1px solid #eee;
+}
+.warp .quick image {
+  width: 72rpx;
+  height: 72rpx;
+  margin: 0 35rpx;
+}
+

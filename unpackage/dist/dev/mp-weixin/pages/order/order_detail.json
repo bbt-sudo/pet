@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "查看",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup",
+    "u-modal": "/uni_modules/uview-ui/components/u-modal/u-modal"
+  }
+}

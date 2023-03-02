@@ -1,0 +1,588 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* uni.scss */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*项目相关*/
+/* 默认主题色 */
+/* 自定义主题色 */
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+/* 颜色变量 */
+.popover_tit {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.popover_tit:before {
+  content: '';
+  position: absolute;
+  left: 30rpx;
+  right: 30rpx;
+  bottom: 0;
+  background: #eeeeee;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  height: 1px;
+}
+.popover_tit .popover_bt {
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 90rpx;
+  display: block;
+  text-align: center;
+}
+.popover_tit .iconfont {
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: #666;
+  font-size: 42rpx;
+  line-height: 90rpx;
+}
+.tui-popup-scroll {
+  max-height: 342rpx;
+}
+.popover_main {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0 30rpx;
+}
+.popover_main .popover_choose {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1px #eeeeee solid;
+}
+.popover_main .popover_choose .iconfont {
+  font-size: 36rpx;
+  line-height: 100rpx;
+  display: block;
+  float: left;
+  width: 36rpx;
+  height: 36rpx;
+}
+.popover_main .popover_choose .popover_reason {
+  display: block;
+  float: left;
+  margin-left: 24rpx;
+  font-size: 30rpx;
+  color: #000000;
+  line-height: 100rpx;
+}
+.popover_main .act .iconfont:before {
+  content: '\E655';
+  color: #FDD100;
+}
+.popover_btn {
+  width: 100%;
+  height: 100rpx;
+  background: white;
+  border: 1px solid #f12435;
+  color: #f12435;
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.order_tui {
+  width: 100%;
+  height: auto;
+  background: white;
+  overflow: hidden;
+}
+.order_tui .order_tuiTit {
+  font-size: 30rpx;
+  border-bottom: 1px #eeeeee solid;
+  font-weight: bold;
+  line-height: 100rpx;
+  padding: 0 30rpx;
+  display: block;
+  overflow: hidden;
+}
+.order_tui .order_tuiBox {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0 30rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+.order_tui .order_tuiBox .order_tuiPa {
+  font-size: 30rpx;
+  color: #333333;
+  line-height: 100rpx;
+  float: left;
+  display: block;
+  width: 160rpx;
+}
+.order_tui .order_tuiBox .order_tuiPb {
+  font-size: 30rpx;
+  color: #333333;
+  line-height: 100rpx;
+  float: left;
+  display: block;
+  width: calc(100% - 160rpx);
+}
+.order_tui .order_tuiBox .order_tuiImgBox {
+  width: auto;
+  height: auto;
+  float: left;
+  margin: 30rpx 0;
+  overflow: hidden;
+}
+.order_tui .order_tuiBox .order_tuiImgBox image {
+  display: block;
+  width: 176rpx;
+  height: 176rpx;
+  border-radius: 20rpx;
+}
+.order_tui .order_tuiBox .order_tuiImgBox text {
+  display: block;
+  text-align: center;
+  font-size: 30rpx;
+  color: #e33b2d;
+  margin-top: 24rpx;
+}
+.order_finals {
+  width: 100%;
+  height: 100rpx;
+  padding: 0 10px;
+  background: white;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.04);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 22;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.order_finals .order_finalsLeft {
+  width: 190rpx;
+  height: 100rpx;
+  overflow: hidden;
+}
+.order_finals .order_finalsLeft .order_finalBox {
+  height: 100rpx;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+.order_finals .order_finalsLeft .order_finalBox .iconfont {
+  display: block;
+  text-align: center;
+  font-size: 42rpx;
+  color: #FDD100;
+  margin-top: 10rpx;
+  margin-right: 5px;
+}
+.order_finals .order_finalsLeft .order_finalBox .order_finalPa {
+  font-size: 24rpx;
+  display: block;
+  text-align: center;
+  margin-top: 5rpx;
+}
+.order_finals .order_finalsRight {
+  width: auto;
+  height: auto;
+  float: right;
+  overflow: hidden;
+}
+.order_finals .order_finalsRight text {
+  width: 130rpx;
+  height: 56rpx;
+  background: white;
+  border: 1px solid #bfbfbf;
+  border-radius: 80rpx;
+  font-size: 24rpx;
+  line-height: 56rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+}
+.order_finals .order_finalsRight .act {
+  background: #FDD100;
+  border: 1px solid #FDD100;
+  color: white;
+}
+.order_final {
+  width: 100%;
+  height: 100rpx;
+  background: white;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.04);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 22;
+}
+.order_final .order_finalBox {
+  width: 50%;
+  height: 100rpx;
+  float: left;
+  position: relative;
+}
+.order_final .order_finalBox:nth-child(1):before {
+  content: '';
+  position: absolute;
+  width: 1rpx;
+  height: 60rpx;
+  background: #eeeeee;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.order_final .order_finalBox text {
+  font-size: 32rpx;
+  color: #333333;
+  line-height: 100rpx;
+  text-align: center;
+  display: block;
+}
+.order_final .order_finalBox text text {
+  display: inline-block;
+  font-size: 56rpx;
+  color: #666666;
+  margin-right: 24rpx;
+  vertical-align: middle;
+}
+.order_main {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0 30rpx 140rpx 30rpx;
+  background: white;
+  margin-top: 20rpx;
+}
+.order_main .order_mainTit {
+  display: block;
+  font-size: 32rpx;
+  line-height: 38rpx;
+  padding: 30rpx 0;
+  border-bottom: 1px #eeeeee solid;
+}
+.order_main .order_mainBox {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 30rpx;
+}
+.order_main .order_mainBox .order_mainPa {
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 29rpx;
+  display: block;
+  width: 120rpx;
+  float: left;
+}
+.order_main .order_mainBox .order_mainPb {
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 29rpx;
+  display: block;
+  width: calc(100% - 120rpx);
+  float: left;
+}
+.order_cont {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20rpx;
+  padding: 30rpx;
+  background: white;
+}
+.order_cont .order_contBox {
+  width: 100%;
+  height: auto;
+  padding: 10rpx 0;
+  overflow: hidden;
+}
+.order_cont .order_contBox .order_contPa {
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 45rpx;
+  float: left;
+  display: block;
+}
+.order_cont .order_contBox .order_contPb {
+  font-size: 24rpx;
+  color: #000000;
+  line-height: 45rpx;
+  float: right;
+  display: block;
+}
+.order_cont .order_contFinal {
+  width: 100%;
+  height: auto;
+  padding: 10rpx 0;
+  overflow: hidden;
+}
+.order_cont .order_contFinal .order_contPa {
+  font-size: 28rpx;
+  color: #333333;
+  line-height: 45rpx;
+  float: left;
+  display: block;
+}
+.order_cont .order_contFinal .order_contPb {
+  font-size: 32rpx;
+  color: #FDD100;
+  line-height: 45rpx;
+  font-weight: bold;
+  float: right;
+  display: block;
+}
+.order_good {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: white;
+  padding: 0 30rpx;
+}
+.order_good .order_shop {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px #eeeeee solid;
+  padding: 40rpx 0 26rpx;
+  overflow: hidden;
+}
+.order_good .order_shop image {
+  display: block;
+  width: 40rpx;
+  height: 38rpx;
+  float: left;
+}
+.order_good .order_shop text {
+  font-size: 28rpx;
+  color: #333333;
+  line-height: 38rpx;
+  display: block;
+  float: left;
+  margin-left: 16rpx;
+}
+.order_good .order_list {
+  width: 100%;
+  height: auto;
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+.order_good .order_list .info {
+  margin-right: 10rpx;
+  display: flex;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+}
+.order_good .order_list image {
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+  flex: 0 0 auto;
+}
+.order_good .order_list .order_goodBox {
+  display: flex;
+  height: 200rpx;
+  padding-left: 20rpx;
+  flex-wrap: wrap;
+  flex: 1;
+  align-content: space-between;
+}
+.order_good .order_list .order_goodBox .order_goodName {
+  width: 100%;
+  height: 88rpx;
+  font-size: 24rpx;
+  line-height: 44rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.order_good .order_list .order_goodBox .order_goodAttr {
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 40rpx;
+  justify-self: flex-start;
+}
+.order_good .order_list .order_price {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.order_good .order_list .order_price .order_jq {
+  font-size: 32rpx;
+  font-weight: bold;
+  line-height: 45rpx;
+  color: #FDD100;
+}
+.order_good .order_list .order_price .order_num {
+  font-size: 24rpx;
+  color: #999999;
+}
+.order_good .order_btn {
+  overflow: hidden;
+  float: right;
+  width: auto;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.order_good .order_btn text.act {
+  border: 1px solid #FDD100;
+  color: #fff;
+  background: #FDD100;
+}
+.order_good .order_btn text {
+  display: block;
+  width: 130rpx;
+  height: 48rpx;
+  background: white;
+  border: 1px solid #bfbfbf;
+  border-radius: 30rpx;
+  line-height: 48rpx;
+  color: #333333;
+  text-align: center;
+  font-size: 24rpx;
+  float: right;
+  margin-left: 30rpx;
+}
+.order_addr {
+  width: 100%;
+  height: auto;
+  padding: 40rpx 30rpx 20rpx 30rpx;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+.order_addr:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background: #eeeeee;
+  left: 30rpx;
+  right: 30rpx;
+  bottom: 0;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+}
+.order_addr .iconfont {
+  color: #999999;
+  font-size: 36rpx;
+  float: left;
+  display: block;
+}
+.order_addr .order_addrBox {
+  width: calc(100% - 50rpx);
+  height: auto;
+  float: left;
+  overflow: hidden;
+  padding-left: 20rpx;
+}
+.order_addr .order_addrBox .order_name {
+  font-size: 28rpx;
+  display: block;
+  color: #000000;
+  line-height: 40rpx;
+}
+.order_addr .order_addrBox .order_name text {
+  margin-left: 24rpx;
+  font-size: 28rpx;
+  color: #333333;
+}
+.order_addr .order_addrBox .order_dizhi {
+  display: block;
+  font-size: 28rpx;
+  color: #999999;
+  line-height: 34rpx;
+  margin-top: 11rpx;
+}
+.order_tit {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0 30rpx;
+  background: linear-gradient(90deg, #fdd100 0%, #fa416a 100%);
+}
+.order_tit .yticon,
+.order_tit .iconfont {
+  font-size: 36rpx;
+  line-height: 104rpx;
+  display: block;
+  float: left;
+  color: white;
+}
+.order_tit .order_yy {
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  line-height: 104rpx;
+  color: white;
+  display: block;
+  float: left;
+}
+.order_tit .tui-countdown {
+  font-size: 28rpx;
+  line-height: 104rpx;
+  float: right;
+}
+.order_tit .tui-countdown .time {
+  color: #fff;
+  margin-right: 16rpx;
+}
+.tui-popup-box {
+  padding: 40rpx;
+}
+.tui-popup-box .label {
+  line-height: 40rpx;
+  font-size: 32rpx;
+  color: #333;
+}
+.tui-popup-box input {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin: 15px 0;
+  line-height: 68rpx;
+  height: 68rpx;
+  font-size: 13px;
+}
+.tui-popup-box .button_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.tui-popup-box button {
+  width: 260rpx;
+}
+
